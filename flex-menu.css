@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    font-family: SansSerif;
+}
+.logo img{
+    width: 150px;
+}
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 2000px
+}
+#content{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+#contact a{
+    padding-left: 80px;
+    padding-bottom: 33px;
+    border-bottom: 4px solid #F33030FF;
+}
+#contact a:hover{
+    /*transition-duration: 5s;*/
+    border-bottom: 8px solid #F33030FF;
+    padding-bottom: 29px;
+}
+
+#nav{
+    width: 60%
+}
+#nav ul{
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+li{
+    list-style-type: none;
+}
+a{
+    padding-bottom: 33px;
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+}
+#nav a:hover{
+    border-bottom: 4px solid #f33030;
+}
+header{
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto
+}
+#header a{
+    border-bottom: 10px solid red;
+}
+#danhiem img{
+    display: none;
+}
+main{
+    background-color: #e8e8e8;
+    width: 75%;
+    height:98%;
+    float: right;
+    border-left: 2px solid white;
+}
+aside{
+    background-color: #e0dedd;
+    float:left;
+    width: 25%;
+    height: 100%;
+    border-top: 2px solid #e8e8e8;
+}
+ul{
+    margin: 0;
+    padding-left: 10px;
+}
+aside{
+    height: 98%;
+}
+aside a{
+    color: black;
+    text-decoration: black;
+    font-size: 33px;
+}
+aside ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    height: auto
+    /*justify-content: space-between;*/
+    /*top: 10em*/
+}
+aside li{
+    display: block;
+}
+aside li:hover{
+    background-color: lightgreen;
+}
+footer{
+    height: 100%;
+    width: 100%;
+    position: initial;
+    bottom:0;
+    background-color: lightgreen;
+    /*top: 0*/
+}
+footer:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+footer img{
+    width: 50px;
+}
+@media screen and (max-width: 1200px){
+    a{
+        font-size: 1.5em;
+    }
+    #contact a{
+        padding-left: 50px;
+        padding-bottom: 37px;
+    }
+    #contact a:hover{
+        padding-bottom: 33px;
+    }
+    a{
+        padding-bottom: 37px;
+    }
+    aside{
+        height: 98%
+    }
+    main{
+        height: 98%
+    }
+    footer{
+        height: 100%
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    header{
+        flex-flow: column;
+        /*height: 355px;*/
+        height:110px
+    }
+    header a{
+        border-bottom: none;
+    }
+    header a:hover{
+        border-bottom: none;
+    }
+    #nav{
+        width: 100%
+    }
+    #nav ul{
+        width: 100%;
+        flex-flow: column;
+    }
+    #content a{
+        padding: 10px 25px;
+        border: 1px dashed red;
+    }
+    #nav li:hover{
+        background-color: greenyellow;
+    }
+    #danhiem img{
+        float: right;
+        width: 80px;
+        display: block;
+        padding-right: 20px
+    }
+    #content{
+        display: none;
+        position: relative;
+        flex-flow: column;
+        justify-content: unset;
+        width: 100%;
+        /*border: 2px solid red;*/
+        height: 500px;
+    }
+    #content a{
+        border-bottom: none;
+        display: flex;
+    }
+    #content a:hover{
+        border-bottom: none;
+        background-color: greenyellow;
+    }
+    .adb{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #contact a:hover{
+        padding-bottom: 10px;
+    }
+    #contact a{
+        border-bottom: 1px dashed red;
+    }
+    aside{
+        width: 100%;
+        height: auto
+    }
+    main{
+        height: 96.2%;
+        width: 100%
+    }
+
+}
